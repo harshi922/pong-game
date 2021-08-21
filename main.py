@@ -67,10 +67,10 @@ def pong():
             ball.bounce_left_right()
 
         # Indicate win/lose
-        if scoreboard.l_score > scoreboard.r_score and (scoreboard.l_score - scoreboard.r_score) >= 1:
+        if scoreboard.l_score > scoreboard.r_score and (scoreboard.l_score - scoreboard.r_score) >= 10:
             is_game_on = False
             scoreboard.game_over("left")
-        elif scoreboard.l_score < scoreboard.r_score and (scoreboard.r_score - scoreboard.l_score) >= 1:
+        elif scoreboard.l_score < scoreboard.r_score and (scoreboard.r_score - scoreboard.l_score) >= 10:
             is_game_on = False
             scoreboard.game_over("right")
 
